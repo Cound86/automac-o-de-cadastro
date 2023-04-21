@@ -3,7 +3,7 @@ import openpyxl
 import pyperclip
 
 workbook = openpyxl.load_workbook(
-    r'/home/rose/Documentos/Devaprender/P2-Automação de cadastro com AutoGUI/.xlsx')
+    r'/home/rose/portifólio/pa automacão de cadastro/.xlsx')
 sheet_produtos = workbook['planilha']
 for linha in sheet_planilha.iter_rows(min_row=2, max_row=501):
     produto = linha[0].value
