@@ -13,25 +13,25 @@ for linha in sheet_planilha.iter_rows(min_row=2, max_row=501):
     valor_unitario = linha[4].value
     notificar_venda = linha[5].value
 
-    pyautogui.click(x, y, duration=1)
+    pyautogui.click(x, y, duration=2)
     pyautogui.write(produto)
 
-    pyautogui.click(x, y, duration=1)
+    pyautogui.click(x, y, duration=2)
     pyautogui.write(fornecedor)
 
-    pyautogui.click(x, y, duration=1)
+    pyautogui.click(x, y, duration=2)
     pyperclip.copy(categoria)
     pyautogui.hotkey('ctrl', 'v')
 
-    pyautogui.click(x, y, duration=1)
+    pyautogui.click(x, y, duration=2)
     pyperclip.copy(valor_unitario)
     pyautogui.hotkey('ctrl', 'v')
 
     if notificar_venda == "Sim":
-        pyautogui.click(x, y, duration=1)
+        pyautogui.click(x, y, duration=2)
     elif notificar_venda == "Não":
-        pyautogui.click(x, y, duration=1)
+        pyautogui.click(x, y, duration=2)
 
-    pyautogui.click(x, y, duration=1)
+    pyautogui.click(x, y, duration=2)
 
-    pyautogui.click(x, y, duration=1)
+    pyautogui.click(x, y, duration=2)
